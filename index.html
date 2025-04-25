@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammadyusuf Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <div data-aos="zoom-in"></div> zoom -->
+</head>
+<body>
+    <header>
+        <div class="wrapper-header container">
+            <div class="wrapper-logo">
+                <a href="#" class="logo">Muhammadyusuf</a>
+            </div>
+            <nav class="nav" role="navigation">
+                <a href="#" class="links">Home</a>
+                <a href="#" class="links">About</a>
+                <a href="#" class="links">Skills</a>
+                <a href="#" class="links">Portfolio</a>
+                <a href="#" class="links">Contacts</a>
+                <a href="#" class="links">Achievements</a>
+            </nav>
+            <div class="nav-right">
+                <select id="langSelect">
+                    <option value="en">En</option>
+                    <option value="uz">O‘z</option>
+                    <option value="ru">Ru</option>
+                  </select>
+                  <button id="theme-mode">☀️</button>
+            </div>
+        </div>
+    </header>
+
+    
+
+    <script>
+        AOS.init();
+      </script>
+
+<script>
+    const langSelect = document.getElementById("langSelect");
+    langSelect.addEventListener("change", () => {
+      const lang = langSelect.value;
+      document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+        el.textContent = el.getAttribute("data-" + lang);
+      });
+    });
+  </script>
+  <script src="main.js"></script>
+
+</body>
+</html>
