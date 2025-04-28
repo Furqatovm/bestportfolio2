@@ -4,7 +4,7 @@ let themeMode =document.getElementById("theme-mode");
 themeMode.addEventListener("click", function(){
     if (themeMode.textContent ==="☀️"){
         themeMode.textContent ="🌜";
-        themeMode.style.background ="black";
+        themeMode.style.background ="hsl(0, 0%, 19%)";
         themeMode.style.paddingLeft ="0";
         themeMode.style.paddingRight ="30px";
     } 

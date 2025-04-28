@@ -4,12 +4,31 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  'Poppins', sans-serif;;
+    font-family:  'Poppins', sans-serif;
+    /* font-family:  'Saira Stencil One', sans-serif; */
     transition: all 0.5s;
     font-size: 1rem;
 }
+
+:root{
+    --p-fontFamily: 'Poppins', sans-serif;
+    --btnBackgroundColor: #e38445;
+    --white: white;
+    --navChildColors: #1f1f1f;
+    --logosWidth: 20px;
+    --btn-borderRadius: 4px;
+    --secondary-color: hsl(0, 0%, 37%);
+    --h1-font-size: 3rem;
+}
+
+
 body{
     background-color: hsl(0, 0%, 90%);
+}
+
+.logo{
+    font-size: 2rem;
+    font-family:'Saira Stencil One', sans-serif;
 }
 
 .container{
@@ -20,7 +39,7 @@ body{
     padding-left: 2rem;
 }
 .links{
-    color: hsl(0, 0%, 12%);
+    color: #1f1f1f;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -48,6 +67,7 @@ body{
     background-color: #fff;
     margin-left: 0.6rem;
     padding-left: 30px;
+    font-size: 1.5rem;
 }
 
 select{
@@ -59,3 +79,65 @@ select{
 #oy{
     display: none;
 }
+
+.icons{
+    width: var(--logosWidth);
+}
+.wrapper-logos{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.logo-span{
+    background-color: var(--btnBackgroundColor);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: var(--btn-borderRadius);
+    font-size: 15px;
+    display: none;
+}
+.line{
+    width: 2px;
+    height: 30px;
+    background-color: var(--secondary-color);
+    rotate: 180deg;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wrapper-logos:hover .logo-span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.wrapper-logos{
+    overflow: hidden;
+    cursor: pointer;
+}
+.hero-sarlavha{
+    font-size: var(--h1-font-size);
+    color: var(--white);
+}
+.general-tugma{
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+    border-radius: var(--btn-borderRadius);
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: end;
+}
+
