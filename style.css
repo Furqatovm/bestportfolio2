@@ -19,11 +19,14 @@
     --btn-borderRadius: 4px;
     --secondary-color: hsl(0, 0%, 37%);
     --h1-font-size: 3rem;
+    --bgcolorlightmode: #e6e6e6;
+    --primaryColor: hsl(0, 0%, 12%);
+    --cardBgColor:hsl(0, 0%, 100%);
 }
 
 
 body{
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--bgcolorlightmode);
 }
 
 .logo{
@@ -55,8 +58,22 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding-block: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
+.sticky{
+    background-color: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.sticky .wrapper-header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .nav{
     display: flex;
     gap: 20px;
@@ -133,6 +150,7 @@ select{
     margin-top: 50%;
     line-height: 1.2;
     font-weight: bold;
+    text-shadow: 2px 3px 10px black;
 }
 .general-tugma{
     padding: 10px 15px;
@@ -144,6 +162,7 @@ select{
     font-weight: 700;
     text-transform: uppercase;
     color: var(--white);
+    text-shadow: 2px 3px 10px black;
 }
 
 .hero{
@@ -196,7 +215,140 @@ nav a:hover{
     border-bottom: 1px solid var(--btnBackgroundColor);
     cursor: pointer !important;
 }
+.general-tugma:hover{
+    background-color: var(--white);
+    color: black;
+    box-shadow: 2px 3px 10px lightgray;
+    cursor: pointer;
+    text-shadow: none;
+}
+.overview-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    width: 32%;
+    padding: 25px;
+    background-color: var(--cardBgColor);
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px lightgray;
+    text-decoration: none;
+}
+.overview-rasm{
+    max-width: 45px;
+    max-height: 45px;
+}
 
+.overview-left{
+    padding: 0.4rem 0.6rem;
+    background-color: var(--btnBackgroundColor);
+    border-radius: 50%;
+    color: var(--white);
+}
+.overview-sarlavha{
+    font-size: 3rem;
+    color: var(--btnBackgroundColor);
+    text-align: center;
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+.sarlavha2{
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+.wrapper-overview{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+}
+.circle{
+    display: none;
+}
+.arrow{
+    font-size: 45px;
+    color: var(--navChildColors);
+}
+
+.circle2{
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border: 2px solid var(--navChildColors);
+    border-radius: 50%;
+    max-width: 60px;
+    max-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+}
+
+.about-left{
+    width: 40%;
+}
+.about-center{
+    width: 5%;
+}
+.about-right{
+    width: 45%;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.about-img{
+    width: 100%;
+}
+.about-section-sarlavha{
+    font-size: var(--h1-font-size);
+    color: var(--primaryColor);
+    max-width: 460px;
+    line-height: 1.2;
+}
+.about-section-p{
+    font-size: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.8;
+    margin-top: 2rem;
+    text-align: justify;
+}
+.tug{
+    background-color: var(--btnBackgroundColor);
+    color: var(--primaryColor);
+    text-shadow: none;
+    border-color: transparent;
+}
+
+.tug2{
+    background-color: transparent;
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    text-shadow: none;
+}
+.wrapper-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+.about-line{
+    width: 2px;
+    height: 50px;
+    background-color: var(--primaryColor);
+}
+.about-span{
+    transform: rotate(90deg);
+}
 
 
 @media (max-width: 768px){
@@ -212,15 +364,30 @@ nav a:hover{
     .hero-center{
         width: 100%;
         height: 100%;
+        margin-top: 30%;
     }
     .hero{
         width: 100%;
         height: 100%;
-        margin-top: 10%;
     }
     .general-tugma{
-        border-color: var(--btnBackgroundColor);
-        color: var(--btnBackgroundColor);
+        background-color: var(--white);
+        color: black;
+    }
+    .hero{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .wrapper-overview{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .overview-1{
+        width: 100%;
+    }
+    .sarlavha2{
+        text-align: center;
     }
 }
 

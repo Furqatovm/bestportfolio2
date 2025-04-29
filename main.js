@@ -15,3 +15,17 @@ themeMode.addEventListener("click", function(){
         themeMode.style.paddingLeft ="30px";
     }
 })
+
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    const circle =this.document.getElementById("circle");
+    if (window.scrollY > 1) { // When scrolled more than 100px
+      header.classList.add('sticky');
+      circle.classList.add("circle2");
+    } else {
+      header.classList.remove('sticky');
+      circle.classList.remove("circle2");
+    }
+  });
+  
