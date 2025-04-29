@@ -20,12 +20,15 @@ themeMode.addEventListener("click", function(){
 window.addEventListener('scroll', function() {
     const header = document.getElementById('header');
     const circle =this.document.getElementById("circle");
+    const theme =  this.document.getElementById("theme-mode");
     if (window.scrollY > 1) { // When scrolled more than 100px
       header.classList.add('sticky');
       circle.classList.add("circle2");
+      theme.style.backgroundColor ="#e6e6e6";
     } else {
       header.classList.remove('sticky');
       circle.classList.remove("circle2");
+      theme.style.backgroundColor ="#fff";
     }
   });
   

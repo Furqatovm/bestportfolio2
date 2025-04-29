@@ -17,11 +17,11 @@
     --navChildColors: #1f1f1f;
     --logosWidth: 20px;
     --btn-borderRadius: 4px;
-    --secondary-color: hsl(0, 0%, 37%);
+    --secondary-color: #5e5e5e;
     --h1-font-size: 3rem;
     --bgcolorlightmode: #e6e6e6;
     --primaryColor: hsl(0, 0%, 12%);
-    --cardBgColor:hsl(0, 0%, 100%);
+    --cardBgColor:#ffffff;
 }
 
 
@@ -100,6 +100,8 @@ select{
 
 .icons{
     width: var(--logosWidth);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .wrapper-logos{
     display: flex;
@@ -294,7 +296,12 @@ main{
     width: 40%;
 }
 .about-center{
-    width: 5%;
+    /* width: 5%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 .about-right{
     width: 45%;
@@ -347,6 +354,7 @@ main{
     background-color: var(--primaryColor);
 }
 .about-span{
+    display: block;
     transform: rotate(90deg);
 }
 
@@ -389,7 +397,60 @@ main{
     .sarlavha2{
         text-align: center;
     }
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-span{
+        rotate: 0deg;
+        display: flex;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .about-section-sarlavha{
+        text-align: center;
+        font-size: 	2.0625rem;
+        width: 100%;
+    }
+    .wrapper-btn{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .general-tugma{
+        width: 100%;
+    }
+    .tug{
+        background-color: var(--btnBackgroundColor);
+        color: var(--navChildColors);
+        border-color: transparent;
+    }
+    .about-center{
+        width: 100%;
+        display: none;
+    }
+    .overview-sarlavha{
+        font-size: 1.813rem;
+    }
+    .container{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .hero-center{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .hero{
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
+
 
 
 
