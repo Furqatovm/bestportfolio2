@@ -22,6 +22,8 @@
     --bgcolorlightmode: #e6e6e6;
     --primaryColor: hsl(0, 0%, 12%);
     --cardBgColor:#ffffff;
+    --sarlavha-font-size: 2rem;
+    --line-height: 1.2;
 }
 
 
@@ -356,6 +358,46 @@ main{
 .about-span{
     display: block;
     transform: rotate(90deg);
+}
+.skills{
+    position: relative;
+}
+
+.center2{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 55%;
+    flex-direction: column-reverse;
+}
+.skill-left{
+    margin-left: 3%;
+}
+.wrapper-skills-btns{
+    padding: 5px;
+    background-color: var(--cardBgColor);
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+.tugg{
+    padding: 5px 25px;
+    border-radius: 100px;
+    background-color: var(--btnBackgroundColor);
+    color: var(--white);
+    border: 2px solid transparent;
+}
+
+.orangee{
+    background-color: var(--btnBackgroundColor);
+    color: var(--white);
+}
+
+.not-orange{
+    background-color: transparent;
+    color: var(--primaryColor);
 }
 
 
