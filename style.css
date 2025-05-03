@@ -24,6 +24,7 @@
     --cardBgColor:#ffffff;
     --sarlavha-font-size: 2rem;
     --line-height: 1.2;
+    --boxshadow: 2px 3px 10px lightgray;
 }
 
 
@@ -399,9 +400,72 @@ main{
     background-color: transparent;
     color: var(--primaryColor);
 }
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper-rasmm{
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background-color: var(--cardBgColor);
+    border-radius: 10px;
+    cursor: help;
+    width: 80px;
+    height: 80px;
+    box-shadow: var(--boxshadow);
+    position: relative;
+}
+.wrapper-rasmlar{
+    display: flex;
+    gap: 1.2rem;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+}
 
+.span{
+    display: none;
+}
+.about-section-p{
+    margin-bottom: 2rem;
+}
 
-@media (max-width: 768px){
+.wrapper-span:hover{
+    .spann{
+        position: absolute;
+        display: block;
+        transform: translateY(-50px);
+    }
+}
+
+#right2{
+    display: none;
+}
+
+.skill-tugma{
+    padding: 5px 25px;
+    border-radius: 100px;
+    background-color: var(--btnBackgroundColor);
+    color: var(--white);
+    border: 2px solid transparent;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.none-tugma{
+    background-color: transparent;
+    color: var(--primaryColor);
+}
+
+@media (max-width: 800px){
     .nav{
         display: none;
     }
