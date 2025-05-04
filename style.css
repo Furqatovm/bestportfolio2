@@ -442,6 +442,7 @@ main{
         position: absolute;
         display: block;
         transform: translateY(-50px);
+        transition-duration: 2s;
     }
 }
 
@@ -554,6 +555,14 @@ button:hover{
     .hero{
         padding-right: 0;
         padding-left: 0;
+    }
+    .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .wrapper-rasmlar{
+        flex-wrap: wrap;
     }
 }
 

@@ -32,3 +32,31 @@ window.addEventListener('scroll', function() {
     }
   });
   
+
+
+function changeSkills(){
+  let skills =document.getElementById("skills");
+  let Tool =document.getElementById("Tool");
+  let right1 =document.getElementById("right1");
+  let right2 = document.getElementById("right2");
+
+
+  skills.addEventListener("click", function(){
+    right1.style.display ="flex";
+    right2.style.display ='none';
+    skills.classList.add("skill-tugma");
+    Tool.classList.remove("skill-tugma");
+    skills.classList.remove("none-tugma");
+    console.log(skills)
+  })
+    Tool.addEventListener("click", function(){
+      right1.style.display ="none";
+      right2.style.display ="flex";
+      skills.classList.remove("skill-tugma");
+      skills.classList.add("none-tugma");
+      Tool.classList.add("skill-tugma");
+    })
+};
+
+
+changeSkills();
