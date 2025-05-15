@@ -25,6 +25,7 @@
     --sarlavha-font-size: 2rem;
     --line-height: 1.2;
     --boxshadow: 2px 3px 10px lightgray;
+    --input-bgcolor:hsl(0, 0%, 93%);
 }
 
 
@@ -575,6 +576,48 @@ footer li{
     width: 45%;
 }
 
+.input{
+    padding: 10px 10px 10px 40px;
+    background-color: var(--bgcolorlightmode);
+    border-radius: 12px;
+    width: 100%;
+    border-color: transparent;
+    position: relative;
+    text-align: left;
+    outline: 2px solid transparent;
+    color: #e38445;
+    padding-left: 10%;
+}
+
+form{
+    background-color: var(--white);
+    box-shadow: var(--boxshadow);
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+.person{
+    position: absolute;
+    bottom: 3.5%;
+    left: 5%;
+}
+.label{
+    margin-bottom: 10px;
+}
+
+.input:hover{
+    outline: 1px solid #e38445;
+    form{
+        color: #e38445;
+    }
+    .input::placeholder{
+        color: #e38445;
+    }
+    
+}
+
+form label{
+    color: #1f1f1f;
+}
 
 
 @media (max-width: 800px){
