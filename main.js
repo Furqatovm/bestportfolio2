@@ -1,5 +1,6 @@
 
 let themeMode =document.getElementById("theme-mode");
+let bodyy =document.querySelector("body");
 
 themeMode.addEventListener("click", function(){
     if (themeMode.textContent ==="☀️"){
@@ -24,7 +25,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) { // When scrolled more than 100px
       header.classList.add('sticky');
       circle.classList.add("circle2");
-      theme.style.backgroundColor ="#e6e6e6";
+      if (theme.style.backgroundColor ==="#e6e6e6"){
+        theme.style.backgroundColor ="#303030"
+      } 
+
+      // theme.style.backgroundColor ="#e6e6e6";
     } else {
       header.classList.remove('sticky');
       circle.classList.remove("circle2");
@@ -59,4 +64,37 @@ function changeSkills(){
 };
 
 
+
 changeSkills();
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".counter");
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute("data-target");
+    const duration = 3000;
+    const startTime = performance.now();
+
+    function animate(time) {
+      const elapsed = time - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const value = Math.floor(progress * target);
+      counter.textContent = value;
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      } else {
+        counter.textContent = target;
+      }
+    }
+
+    requestAnimationFrame(animate);
+  });
+});
+
+
+
+function ozgar(){
+  document.body.classList.toggle("darkmodee");
+}
