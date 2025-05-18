@@ -3,6 +3,11 @@ let themeMode =document.getElementById("theme-mode");
 let bodyy =document.querySelector("body");
 
 themeMode.addEventListener("click", function(){
+  if (document.body.classList.contains("darkmodee")) {
+    header.style.backgroundColor = "#303030"; // dark background
+  } else {
+    header.style.backgroundColor = "#ffffff"; // light background
+ }
     if (themeMode.textContent ==="☀️"){
         themeMode.textContent ="🌜";
         themeMode.style.background ="hsl(0, 0%, 19%)";
@@ -25,9 +30,11 @@ window.addEventListener('scroll', function() {
     if (window.scrollY > 0) { // When scrolled more than 100px
       header.classList.add('sticky');
       circle.classList.add("circle2");
-      if (theme.style.backgroundColor ==="#e6e6e6"){
-        theme.style.backgroundColor ="#303030"
-      } 
+        if (document.body.classList.contains("darkmodee")) {
+        header.style.backgroundColor = "#1a1a1a"; // dark background
+      } else {
+        header.style.backgroundColor = "#ffffff"; // light background
+     }
 
       // theme.style.backgroundColor ="#e6e6e6";
     } else {

@@ -904,6 +904,32 @@ textarea{
     stroke: white;
 }
 
+.rasmm{
+    z-index: 10000;
+}
+.logo-span{
+    z-index: 1000000000;
+}
+
+.darkmodee header{
+    box-shadow: var(--darkbox-shadw);
+    color: var(--white);
+}
+
+.darkmodee nav a{
+    color: var(--white);
+}
+
+.darkmodee select{
+    color: white;
+}
+
+.darkmodee .wrapper-logo{
+    color: #fff;
+}
+
+
+
 @media (max-width: 800px){
     .nav{
         display: none;
