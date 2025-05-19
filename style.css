@@ -20,7 +20,7 @@
     --secondary-color: #5e5e5e;
     --h1-font-size: 3rem;
     --bgcolorlightmode: #e6e6e6;
-    --primaryColor: hsl(0, 0%, 12%);
+    --primaryColor: #1f1f1f;
     --cardBgColor:#ffffff;
     --sarlavha-font-size: 2rem;
     --line-height: 1.2;
@@ -926,6 +926,12 @@ textarea{
 
 .darkmodee .wrapper-logo{
     color: #fff;
+}
+
+
+.darkmodee #jonatish:hover{
+    background-color: #e6e6e6;
+    border-color: transparent;
 }
 
 
