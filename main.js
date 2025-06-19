@@ -22,28 +22,36 @@ themeMode.addEventListener("click", function(){
     }
 })
 
+window.addEventListener("scroll", function () {
+  const circle = document.getElementById("circle");
+  const theme = document.getElementById("theme-mode");
 
-window.addEventListener('scroll', function() {
-    const header = document.getElementById('header');
-    const circle =this.document.getElementById("circle");
-    const theme =  this.document.getElementById("theme-mode");
-    if (window.scrollY > 0) { // When scrolled more than 100px
-      header.classList.add('sticky');
-      circle.classList.add("circle2");
-        if (document.body.classList.contains("darkmodee")) {
-        header.style.backgroundColor = "#1a1a1a"; // dark background
-      } else {
-        header.style.backgroundColor = "#ffffff"; // light background
-     }
+  if (window.scrollY > 0) {
+    header.classList.add("sticky");
+    circle.classList.add("circle2");
 
-      // theme.style.backgroundColor ="#e6e6e6";
+    if (document.body.classList.contains("darkmodee")) {
+      header.style.backgroundColor = "#303030";
+      header.style.boxShadow ="2px 3px 10px rgba(0, 0, 0, 0.607)"
     } else {
-      header.classList.remove('sticky');
-      circle.classList.remove("circle2");
-      theme.style.backgroundColor ="#fff";
+      header.style.backgroundColor = "#ffffff";
+      header.style.boxShadow =" 2px 3px 10px lightgray"
     }
-  });
-  
+  } else {
+    header.classList.remove("sticky");
+    circle.classList.remove("circle2");
+
+    if (document.body.classList.contains("darkmodee")) {
+      header.style.backgroundColor = "#1f1f1f";
+      header.style.boxShadow ="none";
+    } else {
+      header.style.backgroundColor = "#e6e6e6"; // MUHIM: Qayta tiklash
+      header.style.boxShadow ="none";
+    }
+
+    theme.style.backgroundColor = "#fff";
+  }
+});
 
 
 function changeSkills(){
