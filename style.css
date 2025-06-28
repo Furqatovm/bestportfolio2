@@ -1014,6 +1014,9 @@ textarea{
 .links:hover{
     border-bottom: 2px solid var(--btnBackgroundColor);
 }
+.wrapper-logos:hover{
+    color: var(--btnBackgroundColor);
+}
 
 @media (max-width: 800px){
     .nav{
