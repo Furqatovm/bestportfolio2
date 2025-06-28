@@ -979,6 +979,28 @@ textarea{
     display: none;
 }
 
+.darkmodee .logo{
+    color: #fff;
+}
+.darkmodee .hero-left .wrapper-logos{
+    color: #e6e6e6;
+}
+
+.darkmodee #circle .arrow{
+    color: white;
+}
+
+.darkmodee .ar{
+    color: white;
+}
+
+.darkmodee .none-tugma{
+    color: #fff;
+}
+
+#circle{
+    background-color: blur(20px);
+}
 
 @media (max-width: 800px){
     .nav{
@@ -1132,6 +1154,15 @@ textarea{
     #o{
         display: block;
     }
+    .wrap-footer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .darkmodee .logo{
+        color: #fff;
+    }
+    
 }
 
 

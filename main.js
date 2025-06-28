@@ -113,3 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
 function ozgar(){
   document.body.classList.toggle("darkmodee");
 }
+
+const scrollBtn = document.getElementById('circle');
+
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+      });
+    });
