@@ -1002,6 +1002,14 @@ textarea{
     background-color: blur(20px);
 }
 
+.wrapper-logos{
+    text-decoration: none;
+    color: var(--darkboxbgcolor);
+}
+.darkmodee .wrapper-logos{
+    color: #5e5e5e;
+}
+
 @media (max-width: 800px){
     .nav{
         display: none;
