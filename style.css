@@ -84,6 +84,7 @@ body{
 .nav{
     display: flex;
     gap: 20px;
+    padding: 0.8rem 0rem;
 }
 #theme-mode{
     border-radius: 100px;
@@ -226,9 +227,8 @@ select{
     align-items: center;
     justify-content: center;
 }
-nav a:hover{
-    border-bottom: 1px solid var(--btnBackgroundColor);
-    cursor: pointer !important;
+.links:hover{
+    color: var(--btnBackgroundColor);
 }
 .general-tugma:hover{
     background-color: var(--white);
@@ -1008,6 +1008,11 @@ textarea{
 }
 .darkmodee .wrapper-logos{
     color: #5e5e5e;
+}
+
+
+.links:hover{
+    border-bottom: 2px solid var(--btnBackgroundColor);
 }
 
 @media (max-width: 800px){
